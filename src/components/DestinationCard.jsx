@@ -1,4 +1,4 @@
-import { ArrowUpRight, MapPin } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { destinationPhoto } from '../api/format.js'
 
@@ -19,7 +19,7 @@ export default function DestinationCard({ destination }) {
           {activities.map((activity) => <li key={activity}>{activity}</li>)}
         </ul>
         <Link className="card-link" to={`/destinos/${id}`} aria-label={`Ver opciones para ${name}`}>
-          Ver vuelos y hoteles <ArrowUpRight size={17} aria-hidden="true" />
+          Ver vuelos y hoteles
         </Link>
       </div>
     </article>

@@ -86,7 +86,7 @@ export default function TripPlanner({ trip }) {
         )}
         {feedback && <p className={feedback.error ? 'plan-error' : 'plan-feedback'}
           role={feedback.error ? 'alert' : 'status'}>{feedback.message}</p>}
-        <small>Planificación simulada para una persona. No genera reservas ni cobros.</small>
+        <small>Planificación simulada para una persona.</small>
       </aside>
     </div>
   )
